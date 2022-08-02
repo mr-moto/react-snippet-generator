@@ -27,5 +27,10 @@
     "mkdirp": "^1.0.4",
     "prettier": "2.7.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "files": [
+    "lib/*",
+    "utils/*",
+    "snippets/*"
+  ]
 }
