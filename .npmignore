@@ -1,9 +1,4 @@
-node_modules
-.github
-lib
-snippets
-src
-utils
-.prettierrc
-pnpm-lock.yaml
-tsconfig.json
+**/*
+!./README.md
+!./package.json
+!./dist
