@@ -1,13 +1,9 @@
-import fs from "fs";
-import mkdirp from "mkdirp";
-import * as snippets from "../snippets";
-import prettier from "prettier";
+const fs = require("fs");
+const mkdirp = require("mkdirp");
+const snippets = require("../snippets");
+const prettier = require("prettier");
 
-export const createFile = async (
-  name: string,
-  options: { ts: boolean },
-  dir: string
-): Promise<boolean> => {
+module.exports.createFile = async (name, options, dir) => {
   const { ts } = options;
   const componentName = name.charAt(0).toUpperCase() + name.slice(1);
   const componentDir = `${process.cwd()}/src/${dir}/${componentName}`;

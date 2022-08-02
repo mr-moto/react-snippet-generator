@@ -1,4 +1,4 @@
-export const js = (name: string) => {
+module.exports.js = (name) => {
   return {
     index: `export { ${name} } from './${name}';`,
     fc: `export const ${name} = () => {
@@ -10,7 +10,7 @@ export const js = (name: string) => {
   };
 };
 
-export const ts = (name: string) => {
+module.exports.ts = (name) => {
   return {
     index: `export { ${name} } from './${name}';`,
     fc: `type Props = {}
