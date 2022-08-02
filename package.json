@@ -1,22 +1,38 @@
 {
-  "name": "@mr-moto/react-generator",
-  "version": "0.0.0",
+  "name": "@mr-moto/react-snippet-generator",
+  "version": "0.0.1",
   "description": "",
-  "main": "lib/index.js",
+  "main": "dist/lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf ./dist && tsc"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mr-moto/react-generator.git"
+    "url": "git+https://github.com/mr-moto/react-snippet-generator.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mr-moto/react-generator/issues"
+    "url": "https://github.com/mr-moto/react-snippet-generator/issues"
   },
   "bin": {
-    "rg": "./lib/index.js"
+    "rsg": "dist/lib/index.js"
   },
-  "homepage": "https://github.com/mr-moto/react-generator#readme"
+  "homepage": "https://github.com/mr-moto/react-snippet-generator#readme",
+  "dependencies": {
+    "@types/mkdirp": "^1.0.2",
+    "@types/prettier": "^2.6.4",
+    "commander": "^9.4.0",
+    "mkdirp": "^1.0.4",
+    "yargs": "^17.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.6.3",
+    "prettier": "2.7.1",
+    "typescript": "^4.7.4"
+  }
 }
