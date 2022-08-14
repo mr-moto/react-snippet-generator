@@ -1,14 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@mr-moto/react-snippet-generator': 'link:'
   commander: ^9.4.0
   cosmiconfig: ^7.0.1
   mkdirp: ^1.0.4
   prettier: 2.7.1
 
 dependencies:
-  '@mr-moto/react-snippet-generator': 'link:'
   commander: 9.4.0
   cosmiconfig: 7.0.1
   mkdirp: 1.0.4
