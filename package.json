@@ -24,10 +24,10 @@
   "homepage": "https://github.com/mr-moto/react-snippet-generator#readme",
   "dependencies": {
     "commander": "^9.4.0",
+    "cosmiconfig": "^7.0.1",
     "mkdirp": "^1.0.4",
     "prettier": "2.7.1"
   },
-  "devDependencies": {},
   "files": [
     "lib/*",
     "utils/*",
