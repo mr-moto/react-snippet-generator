@@ -9,6 +9,22 @@ yarn -D @mr-moto/react-snippet-generator
 pnpm i -D @mr-moto/react-snippet-generator
 ```
 
+## Config
+Include a .rsgrc ( or another cosmiconfig format file ) at the root of your project directory. 
+
+You can set a custom path for the generated components in this file
+
+```sh
+{
+  components: {
+    path: 'src/custom_path_here'
+  },
+  pages: {
+    path: 'src/custom_path_here'
+  }
+}
+```
+
 
 ## Usage
 ```sh
