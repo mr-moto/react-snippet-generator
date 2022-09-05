@@ -15,7 +15,7 @@ module.exports.ts = (name) => {
     index: `export { ${name} } from './${name}';`,
     fc: `type Props = {}
 
-          const ${name} = (props: Props) => {
+          export const ${name} = (props: Props) => {
               return (
                   <div>${name}</div>
               )
