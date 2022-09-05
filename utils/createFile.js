@@ -9,7 +9,7 @@ module.exports.createFile = async (name, options, dir) => {
   const { ts } = options;
 
   const explorerSync = cosmiconfigSync("rsg");
-  const { config } = explorerSync.search();
+  const { config } = explorerSync.search() || {};
 
   const componentName = name.charAt(0).toUpperCase() + name.slice(1);
 
@@ -18,10 +18,10 @@ module.exports.createFile = async (name, options, dir) => {
 
   const componentDir = {
     js: `${process.cwd()}/${
-      config[dir]?.path ?? `src/${dir}`
+      config?.[dir]?.path ?? `src/${dir}`
     }/${componentName}`,
     ts: `${process.cwd()}/${
-      config[dir]?.path ?? `src/${dir}`
+      config?.[dir]?.path ?? `src/${dir}`
     }/${componentName}`,
   };
 
